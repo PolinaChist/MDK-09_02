@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Prata:regular);
+@import url(https://fonts.googleapis.com/css?family=Lovers+Quarrel:regular);
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+body {
+  font-family: "Prata";
+}
+.wraper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+._container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header__container {
+  position: relative;
+  z-index: 2;
+}
+.header {
+  background-size: 100%;
+  position: relative;
+  padding: 50px 0px 130px 0px;
+}
+.header .header-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.header__container__title {
+  font-family: "Lovers Quarrel";
+  text-align: center;
+  font-size: 124px;
+}
+.header__burger {
+  display: none;
+}
+.header__title-block {
+  margin: 0px 0px 30px 0px;
+}
+.header__container__menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.header__container__menu a {
+  text-decoration: none;
+  color: black;
+}
+.header__container__menu a:hover {
+  color: #ffffff;
+}
+.header__container__btn {
+  margin: 0px 80px 0px 0px;
+}
+.header__container__button {
+  width: 350px;
+  min-height: 85px;
+  text-align: center;
+  background-color: #535151;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.header__container__button:hover {
+  color: black;
+  background-color: white;
+}
+.header__container__tex {
+  display: flex;
+  flex-direction: column;
+  padding: 200px 0px 0px 0px;
+  align-items: flex-end;
+}
+.header__container__text {
+  line-height: 130%;
+  font-size: 50px;
+  color: #fdfdfd;
+
+  margin: 0px 0px 130px 0px;
+  width: 65%;
+}
+.rooms__container__title {
+  text-align: center;
+  font-size: 60px;
+  padding: 30px 30px;
+}
+.rooms__container__info {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5e5e5;
+}
+.container__text__subtitle {
+  text-align: left;
+  font-size: 50px;
+  padding: 40px;
+}
+.container__text__description {
+  font-size: 30px;
+  line-height: 40px;
+  padding: 40px;
+}
+.container__text__price {
+  font-size: 50px;
+  padding: 0px 70px 0px 0px;
+  text-align: right;
+}
+.services__blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.services__item {
+  position: relative;
+  width: 100%;
+  padding: 0px 0px 80% 0px;
+}
+.services__item::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.services__item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.services__text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.title {
+  text-align: center;
+  font-size: 60px;
+  padding: 30px 30px;
+}
+.contacts__container__title {
+}
+.contacts__container__info {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__container__info__forms {
+  flex: 0 1 50%;
+}
+.contacts__container__info__form {
+  padding: 10px 10px;
+}
+.contacts__container__info__form input {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 0px 0px 0px 20px;
+  color: #39434d;
+  border: 1px solid #cccccc;
+  transition: all 0.3s ease;
+}
+.form-btn {
+  padding: 0px 0px 20px 80px;
+}
+.info__button {
+  font-size: 25px;
+  min-height: 60px;
+  border-radius: 15px;
+  background: #464646;
+  transition: all 0.3s linear;
+  width: 80%;
+  color: #fff;
+  cursor: pointer;
+}
+.info__button:hover {
+  color: black;
+  background-color: white;
+}
+.form__input {
+  margin: 20px;
+}
+.form__input textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  font-size: 20px;
+  color: #535151;
+  margin-top: 30px;
+  padding: 10px 0px 0px 10px;
+  font-family: Prata;
+}
+.form__input input {
+  font-family: Prata;
+}
+
+.contacts__info__text {
+  flex: 0 1 50%;
+}
+.contacts__info__text__title {
+  font-size: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  padding: 70px 0px 0px 0px;
+  margin: 0px 0px 20px 0px;
+}
+.contacts__info__text__subtitle {
+  font-size: 30px;
+  line-height: 50px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #535151;
+  margin-top: 30px;
+}
